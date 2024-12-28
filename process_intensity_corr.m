@@ -6,15 +6,15 @@ gauss_filter_radius = 10.0;
 preview_flag = 1;
 denoise_sigma = 2;  % [C2P: 2; Product: 10]
 
-na_naa_nii = 'demo_data/c2p_naa_6.nii';
-na_nav_nii = 'demo_data/c2p_nav_7.nii';
+na_naa_nii = 'c2p_naa_6.nii';
+na_nav_nii = 'c2p_nav_7.nii';
 
 na_naa_img = auxil_nii_load_dimg(na_naa_nii);
 na_nav_img = auxil_nii_load_dimg(na_nav_nii);
 
 
 if 1 % [NAA-NAV-NAA] to reduce the influence from motion
-    na_naa_2_nii = 'demo_data/c2p_naa_8.nii';
+    na_naa_2_nii = 'c2p_naa_8.nii';
     na_naa_2_img = auxil_nii_load_dimg(na_naa_2_nii);
     na_naa_1_img = na_naa_img;
     na_naa_img = (na_naa_1_img + na_naa_2_img)/2;
@@ -41,7 +41,7 @@ na_nav_den_flt_img = convn(na_nav_den_img, filter_gauss, 'same');
 corr_map = (na_naa_den_flt_img + corr_regulator) ./ (na_nav_den_flt_img + corr_regulator);
 corr_map = convn(corr_map, filter_gauss, 'same');
 
-% Export and Plot
+% Save and Plot
 corr_nii = 'c2p_corr';
 auxil_nii_save_ref(corr_map * 100, na_naa_nii, corr_nii);
 
