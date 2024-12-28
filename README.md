@@ -1,8 +1,8 @@
 # UHF-23Na
 MATLAB script for post-processing of 23Na imaging at UHF platform
 
-# Protocol
-1 Intensity correction
+## Protocol
+1 Intensity correction \n
     Low resolution (LR) acquisition with short TR and different receiving coil setting
         LR with array coil (NAA)
         LR with volume coil (NAV)
@@ -10,3 +10,6 @@ MATLAB script for post-processing of 23Na imaging at UHF platform
 
 2 High resolution 23Na imaging
     High resolution (HR) acquisition with long TR (120ms) and 90 degree flip angle. 
+
+## Post-processing
+1 
