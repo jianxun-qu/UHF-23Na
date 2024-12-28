@@ -7,8 +7,8 @@ gauss_filter_radius = 10.0;
 preview_flag = 1;
 denoise_sigma = 2;  // for Armin Nagel's C2P sequence, please use 2; for SIEMENS product sequence, please use 10.
 
-na_naa_nii = 'c2p_naa.nii';
-na_nav_nii = 'c2p_nav.nii';
+na_naa_nii = 'demo_data/c2p_naa.nii';
+na_nav_nii = 'demo_data/c2p_nav.nii';
 
 na_naa_img = auxil_nii_load_dimg(na_naa_nii);
 na_nav_img = auxil_nii_load_dimg(na_nav_nii);
