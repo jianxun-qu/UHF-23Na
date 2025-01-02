@@ -1,7 +1,7 @@
 # UHF-23Na
 MATLAB script for post-processing of 23Na imaging at UHF platform <br />
 
-# Package Required
+## Package Required
 * BM4D <https://webpages.tuni.fi/foi/GCF-BM3D/index.html> <br />
 * SPM12 <https://www.fil.ion.ucl.ac.uk/spm/software/spm12/> <br />
 * NIfTI_20140122 <https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image> <br />
