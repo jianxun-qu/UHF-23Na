@@ -7,14 +7,16 @@ SPM12 <https://www.fil.ion.ucl.ac.uk/spm/software/spm12/> <br />
 NIfTI_20140122 <br />
 
 ## Protocol
-1 Intensity correction <br />
+1. Intensity correction <br />
 &nbsp; Low resolution (LR) acquisition with short TR and different receiving coil setting <br />
         LR with array coil (NAA) <br />
         LR with volume coil (NAV) <br />
         LR with array coil (NAA) <br />
 
-2 High resolution 23Na imaging <br />
+2. High resolution 23Na imaging <br />
 High resolution (HR) acquisition with long TR (120ms) and 90 degree flip angle. <br />
+
+3. Quantification
 
 ## Post-processing
 1 
