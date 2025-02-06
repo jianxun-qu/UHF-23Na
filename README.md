@@ -16,8 +16,10 @@ MATLAB script for post-processing of 23Na imaging at UHF platform <br />
 
 ## Protocol
 The array coil provides higher signal-to-noise ratio (SNR). However, using an array coil can introduce signal intensity bias, where regions closer to the receiving channel exhibit higher signal intensity, while regions farther away show lower signal intensity. This bias must be corrected to ensure accurate imaging. <br />
+
 The Rapid coil offers two receiving mode: one utilizing the array coil (NAA in Protocol Card) and the other using the volume voil (NAV). The volume coil does not suffer from signal intensity bias. To address intensity bias, the brain are images twice - once with array coil and once with the volume coil. The resulting images are then divided to generate an intensity correction map. To compensate for the volume coil's low SNR, multiple averages are acquired during the volume coil mode to enhance the signal. <br />
-Additionally, to minimize the impact of motion during scans, the acquisition with array coil is also performed twice, immediatedly before and after the volume coil acquisition. These two array coil scans are then averaged to reduce motion's impact.
+
+Additionally, to minimize the impact of motion during scans, the acquisition with array coil is also performed twice, immediatedly before and after the volume coil acquisition. These two array coil scans are then averaged to reduce motion's impact.<br />
 1. Intensity correction <br />
 Low resolution (LR) acquisition with short TR and different receiving coil setting <br />
 LR with array coil (NAA) <br />
