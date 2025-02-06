@@ -1,4 +1,6 @@
 % Register 23Na image to anatomical image
+% First reslice 23Na to gre_ref
+% Then register 23Na to t1 with gre_ref as source image
 
 t1_nii = 't1.nii';
 gre_ref_nii = 'gre_ref.nii';
