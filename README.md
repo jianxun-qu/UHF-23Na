@@ -23,12 +23,15 @@ Additionally, to minimize the impact of motion during scans, the acquisition wit
 
 1. Intensity correction <br />
 Low resolution (LR) acquisition with short TR and different receiving coil setting <br />
-LR with array coil (NAA) <br />
-LR with volume coil (NAV) <br />
-LR with array coil (NAA) <br />
+LR with array coil (NAA: array coil) <br />
+LR with volume coil (NAV: volume coil) <br />
+LR with array coil (NAA: array coil again) <br />
 
 2. High resolution 23Na imaging <br />
 High resolution (HR) acquisition with long TR (120ms) and 90 degree flip angle. <br />
 
 ## Post-processing
-1 
+1. Generate intensity correction map <br />
+process_corr_map.m
+2. Denoise, intensity correction, and quantification <br />
+process.m
