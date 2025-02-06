@@ -1,4 +1,6 @@
-t1_bravo_nii = 't1_bravo.nii';
+% Register 23Na image to anatomical image
+
+t1_nii = 't1.nii';
 gre_ref_nii = 'gre_ref.nii';
 na_hr_nii = 'c2p_hr.nii';
 
