@@ -1,7 +1,7 @@
 # UHF-23Na
 MATLAB script for post-processing of 23Na imaging at UHF platform <br />
 
-# System & Sequence
+## System & Sequence
 * System: Terra VE12U-SP01
 * Coil: Rapid Dual-tuned 1H/23Na Coil. 1Tx/1Rx for 1H and 1Tx/32Rx for 23Na <br />
 <https://www.rapidbiomed.de/product/multi-channel-dual-tuned-head-array-for-7-t/> <br />
